@@ -68,9 +68,15 @@ vars:
   ipxe_sha512: 001c10a81ca232f3656930ad8476ce3d1dbf117c49f45f84ba0a4f58668239d0cf0ab6a510955ac77b3e608cbf96367194ab3fc58a9efe3f8f3c9b5d12fb8348
 
   # renovate: datasource=git-tags extractVersion=^v(?<version>.*)$ depName=git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git
-  linux_version: 6.6.47
-  linux_sha256: d43376c9e9eaa92bb1b926054bd160d329c58a62d64bd65fe1222c11c6564f50
-  linux_sha512: 9a3c52f5df4480a61493ca24d25c9e9b5b9dfe2e465ecf7d457bc240abf88b2d08d745b63895c6b47a557fca610882bbc8b5fe66b2d7a9262f548daca50d4004
+  # https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-
+  # TODO: Test result: WORKS
+  linux_version: 6.8.9
+  linux_sha256: f905f1238ea7a8e85314bacf283302e8097006010d25fcea726d0de0ea5bc9b6
+  linux_sha512: 67056eae13be9130e11ea7e4d394d1f0b6b1dccc4f080f72c136870d4486fdebc2c315d149ca4f1e57af4c79dedf849e31c439426166544691508edafca3d350
+  # TODO: Test result: FAIL
+  #linux_version: 6.9.9
+  #linux_sha256: 2be05b487eb239a3bf687d628a8f104177d09c310f00bcc2a5e50f1733421eb9
+  #linux_sha512: b6f08a8254f62e184489c2822ceaa4d0dd4ef73f4c08a8458bc8ab4fb6ffcdee5218798360b4f53b684f73590c531dea90c9e488e0a6afbabb4e32b642746332
 
   # renovate: datasource=git-tags extractVersion=^v(?<version>.*)$ depName=git://git.kernel.org/pub/scm/utils/kernel/kmod/kmod.git
   kmod_version: 33
